@@ -7,8 +7,9 @@ import org.testng.annotations.BeforeClass;
  */
 public abstract class AbstractAccessBaidu extends BaseTest{
     private String url = "http://www.baidu.com";
+
     @BeforeClass
-    public void accessBaidu() {
+    public void accessBaidu() throws InterruptedException {
         driver.get(url);
         System.out.println("访问百度，title为" + driver.getTitle());
     }
