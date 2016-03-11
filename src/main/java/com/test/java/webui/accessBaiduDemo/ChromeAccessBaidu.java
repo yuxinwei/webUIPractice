@@ -8,7 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class ChromeAccessBaidu {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","d:\\Software\\SeleniumDriver\\chromedriver2.20.exe");
+//        System.setProperty("webdriver.chrome.driver","D:\\Software\\SeleniumDriver\\chromedriver2.20.exe");
+        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\driver\\chromedriver2.20.exe");
         //如果chrome没有安装在默认位置
 //        System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
         WebDriver driver = new ChromeDriver();

@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+</head>
+<body>
+<script type="text/javascript">
+	function testConfirm() {
+		var text = document.getElementsByTagName("span")[0];
+		if (window.confirm('我是确认提示框！')) {
+			text.innerHTML = "你点击了确定按钮！";
+		}else {
+			text.innerHTML = "你点击了取消按钮！";
+		}
+	}
+		
+	function testPrompt() {
+		var  text = document.getElementsByTagName("span")[0];
+		var  promptText = window.prompt("点都点了，就输入点什么吧");
+		if (promptText == null || promptText == "") {
+			alert("爷，求您了，燕过无痕，爷过留名");
+		}else {
+			text.innerHTML = promptText;	
+		}
+	}
+		
+</script>
+<button id="alert" onClick='window.alert("Hello World");'>Alert Button</button>
+<button id="confirm" onClick="testConfirm()">Confirm Button</button>
+<button id="prompt" onClick="testPrompt()">Prompt Button</button>
+<br/>
+<span></span>
+</body>
+</html>

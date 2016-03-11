@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>测试HTML5的Web Storage</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	<style type="text/css">
+		#local {
+			color:red;
+			font-weight:bold;
+		}
+		#session {
+			color:green;
+			font-weight:bold;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		//判断浏览器是否支持Web Storage
+		window.onload=function(){
+			if(!window.localStorage){	
+				alert('你的浏览器不支持此功能');
+			}
+		}
+		
+		//增加Local Storage
+		function addLocalStorage(){
+			localStorage.name =  "Ryan ---- Show By Local Storage";
+			var  a = document.getElementsByTagName("span")[0];
+			a.innerHTML = localStorage.name;
+		}
+		
+		//删除Local Storage
+		function delLocalStorage() {
+			localStorage.removeItem("name");
+		}
+		
+		//增加Session Storage
+		function addSessionStorage(){
+			sessionStorage.name =  "Ryan ---- Show By Session Storage";
+			var  a = document.getElementsByTagName("span")[0];
+			a.innerHTML = sessionStorage.name;
+		}
+		
+		
+	</script>
+	<p>我在网页中使用本地存储了名子：<span id = "local"></span></p>
+	
+	<input type="button" value="点我使用本地存储" onclick="addLocalStorage()" />
+	<input type="button" value="点我删除本地存储" onclick="delLocalStorage()" />
+	<input type="button" value="点我使用Session存储" onclick="addSessionStorage()"/>
+</body>
+</html>
+
+

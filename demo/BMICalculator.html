@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://dl.dropbox.com/u/55228056/bmicalculator.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+
+<title>BMI Calculator</title>
+
+<!-- Meta Tags -->
+<meta charset="utf-8">
+<meta name="generator" content="Wufoo">
+<meta name="robots" content="index, follow">
+
+<!-- CSS -->
+
+
+<!-- JavaScript -->
+<!-- <script src="scripts/wufoo.js"></script>  -->
+
+	<script type="text/javascript">
+
+
+		function cal_bmi(kg, htc){
+		   m = htc/100;
+		   h2 = m * m;
+
+		   bmi = kg/h2;
+	
+
+		   f_bmi = Math.floor(bmi);
+
+		   diff  = bmi - f_bmi;
+		   diff = diff * 10;
+
+		   diff = Math.round(diff);
+		   if (diff == 10){
+			  // Need to bump up the whole thing instead
+			  f_bmi += 1;
+			  diff = 0;
+		   }
+		   bmi = f_bmi + "." + diff;
+
+		   return bmi;
+		}
+		function compute(){
+		  		   // Set up variables for calculation
+			var weightKg;
+			var heightCMS;
+			var bmi;
+			var bmi_category;
+			weightKg = document.getElementById("weightKg");
+			heightCMS = document.getElementById("heightCMS");
+			error = document.getElementById("error");
+			error.innerText = "";
+			
+			if (heightCMS.value == "")
+			{
+				error.innerText = "Please enter Height";
+				return false;
+			}
+			if (weightKg.value == "")
+			{
+				error.innerText = "Please enter Weight";
+				return false;
+			}
+			
+			bmi = document.getElementById("bmi");
+			bmi_category = document.getElementById("bmi_category");
+
+		   w = weightKg.value;
+		   
+		//   i = parseInt(f.htc.value);
+		   i = heightCMS.value;
+
+		   // Do validation checking to ensure existence of values
+		
+		   bmi.value = cal_bmi(w, i);
+		   b = cal_bmi(w, i);
+		   
+		   if (b < 18.5)
+			bmi_category.value = "Underweight";
+		   else if((b >= 18.5) && (b <= 24.9))
+			bmi_category.value = "Normal";
+		   else if((b >= 25) && (b <= 29.9))
+			bmi_category.value = "Overweight";
+		   else if(b >= 30)
+			bmi_category.value = "Obesity";
+		}
+		
+	</script>
+
+
+<!--[if lt IE 10]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head><style type="text/css"></style>
+
+<body id="public">
+<div id="container" class="ltr">
+
+<h1 id="logo">
+</h1>
+
+<!-- <form id="form1" name="form1" class="wufoo leftLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+action="https://testmann.wufoo.com/forms/z7x3p9/#public"> -->
+
+<!-- <form id="form1" name="form1" class="wufoo leftLabel page" autocomplete="off"> -->
+<div class="wufoo leftLabel page">
+<header id="header" class="info">
+<h2>BMI Calculator</h2>
+<div>Enter Your Height and Weight (in Metric) to Calculate Your BMI</div>
+</header>
+
+<ul>
+
+<li id="foli1" class="notranslate      ">
+<label class="desc" id="title1" for="heightCMS">
+Height in Centimeters:
+<span id="req_1" class="req">*</span>
+</label>
+<div>
+<input name="heightCMS" id="heightCMS" type="number" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="">
+</div>
+</li><li id="foli2" class="notranslate      ">
+<label class="desc" id="title2" for="weightKg">
+Weight in Kilograms:
+<span id="req_2" class="req">*</span>
+</label>
+<div>
+<input name="weightKg" id="weightKg" type="number" class="field text medium" value="" maxlength="255" tabindex="2" onkeyup="">
+</div>
+</li>
+
+ <li class="buttons ">
+	<div>
+		<!-- <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit" onclick="error.innerText = 'some error';"/> -->
+		<input type="button" id="Calculate" value="Calculate" data-theme="d" onclick="compute(); return false">
+	</div>
+</li>
+
+<label>Your BMI is:</label><input type="text" id="bmi" name="bmi" readonly="true"><br>
+<label>Category:</label><input type="text" id="bmi_category" name="bmi_category" readonly="true"><br><br>
+<div id="error">&nbsp;</div>
+</ul>
+
+</div>
+<!-- </form>  -->
+
+</div><!--container-->
+
+</body></html>
