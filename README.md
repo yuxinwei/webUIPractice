@@ -22,7 +22,8 @@ web UI实战
         - [getAttribute](src/main/java/com/test/java/webui/api/element/GetAttrubuteTest.java) --获取元素属性
 
 - 高级技巧
-    - Actions(键盘事件、鼠标双击、拖拽)
+    - Actions(键盘事件、鼠标双击)
+        - [鼠标双击](src/main/java/com/test/java/webui/api/actions/ActionsDemo)
     - 执行JS
         - [用jQuery框架辅助](src/main/java/com/test/java/webui/api/element/SelectElement.java)
     - 截图

@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 /**
  * Created by beigui on 2016/3/11.
+ * 功能：当鼠标双击的时候触发了字体变化的事件， doubleClick模拟了真实的双击动作，验证了字体属性
  */
 public class ActionsDemo extends AbstractLocalHtml{
     @Test
