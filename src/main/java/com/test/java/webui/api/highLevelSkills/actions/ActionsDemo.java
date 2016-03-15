@@ -1,4 +1,4 @@
-package com.test.java.webui.api.actions;
+package com.test.java.webui.api.highLevelSkills.actions;
 
 import com.test.java.webui.api.base.AbstractLocalHtml;
 import org.openqa.selenium.By;

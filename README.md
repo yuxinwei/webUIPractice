@@ -23,11 +23,11 @@ web UI实战
 
 - 高级技巧
     - Actions(键盘事件、鼠标双击)
-        - [鼠标双击](src/main/java/com/test/java/webui/api/actions/ActionsDemo)
+        - [鼠标双击](src/main/java/com/test/java/webui/api/highLevelSkills/actions/ActionsDemo)
     - 执行JS
-        - [用jQuery框架辅助](src/main/java/com/test/java/webui/api/element/SelectElement.java)
+        - [用jQuery框架辅助](src/main/java/com/test/java/webui/api/highLevelSkills/jsExecutor/SelectElement.java)
     - 截图
-        - [截图功能](src/main/java/com/test/java/webui/api/screenshot/TakesScreenshotTest.java)
+        - [截图功能](src/main/java/com/test/java/webui/api/screenshot/highLevelSkills/TakesScreenshotTest.java)
     - 下拉列表
     - 测试流控制
 - TestNG数据驱动

@@ -1,4 +1,4 @@
-package com.test.java.webui.api.screenshot;
+package com.test.java.webui.api.highLevelSkills.screenshot;
 
 import com.test.java.webui.api.base.AbstractAccessBaidu;
 import org.apache.commons.io.FileUtils;

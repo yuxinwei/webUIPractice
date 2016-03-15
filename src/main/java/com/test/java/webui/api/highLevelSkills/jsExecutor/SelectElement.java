@@ -1,4 +1,4 @@
-package com.test.java.webui.api.element;
+package com.test.java.webui.api.highLevelSkills.jsExecutor;
 
 import com.test.java.webui.api.base.AbstractAccessBaidu;
 import org.openqa.selenium.WebElement;
