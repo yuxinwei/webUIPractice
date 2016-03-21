@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeClass;
  * Created by beigui on 2016/3/8.
  */
 public abstract class AbstractAccessBaidu extends BaseTest{
-    private String url = "http://www.baidu.com";
+    private String url = "https://www.baidu.com";
 
     @BeforeClass
     public void accessBaidu() throws InterruptedException {

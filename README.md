@@ -29,6 +29,7 @@ web UI实战
     - 截图
         - [截图功能](src/main/java/com/test/java/webui/api/screenshot/highLevelSkills/TakesScreenshotTest.java)
     - 下拉列表
+        - [选择下拉列表中的值](src/main/java/com/test/java/webui/api/highLevelSkills/select/SelectDemo.java)
     - 测试流控制
 - TestNG数据驱动
 
