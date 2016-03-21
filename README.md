@@ -26,11 +26,26 @@ web UI实战
         - [鼠标双击](src/main/java/com/test/java/webui/api/highLevelSkills/actions/ActionsDemo)
     - 执行JS
         - [用jQuery框架辅助](src/main/java/com/test/java/webui/api/highLevelSkills/jsExecutor/SelectElement.java)
+        - TODO 警告窗
+        - TODO 确认框
+        - TODO 提示框
     - 截图
         - [截图功能](src/main/java/com/test/java/webui/api/screenshot/highLevelSkills/TakesScreenshotTest.java)
     - 下拉列表
         - [选择下拉列表中的值](src/main/java/com/test/java/webui/api/highLevelSkills/select/SelectDemo.java)
     - 测试流控制
+        - 等待
+            - 显式等待
+            - 隐式等待
+            - 自定义期望条件同步
+        - 检查元素
+            - 是否存在
+            - 状态
+        - 弹出窗口
+            - 名称识别
+            - 标题识别
+            - 内容识别
+        - 框架
 - TestNG数据驱动
 
 
