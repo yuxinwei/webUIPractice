@@ -26,9 +26,9 @@ web UI实战
         - [鼠标双击](src/main/java/com/test/java/webui/api/highLevelSkills/actions/ActionsDemo)
     - 执行JS
         - [用jQuery框架辅助](src/main/java/com/test/java/webui/api/highLevelSkills/jsExecutor/SelectElement.java)
-        - TODO 警告窗
-        - TODO 确认框
-        - TODO 提示框
+        - 警告窗
+        - 确认框
+        - 提示框
     - 截图
         - [截图功能](src/main/java/com/test/java/webui/api/screenshot/highLevelSkills/TakesScreenshotTest.java)
     - 下拉列表
@@ -47,6 +47,7 @@ web UI实战
             - 内容识别
         - 框架
 - TestNG数据驱动
+- TestNG xml运行
 
 
 
