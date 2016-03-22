@@ -33,7 +33,7 @@ web UI实战
     - 测试流控制
         - 等待
             - 隐式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ImplicitlyWaitDemo.java)
-            - 显式等待
+            - 显式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ConditionWaitDemo.java)
             - 自定义期望条件同步
         - 检查元素
             - 是否存在
