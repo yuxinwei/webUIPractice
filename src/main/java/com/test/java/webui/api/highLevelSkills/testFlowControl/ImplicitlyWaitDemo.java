@@ -31,7 +31,10 @@ public class ImplicitlyWaitDemo {
 
         WebElement message = driver.findElement(By.id("pageContent"));
         //等待ajax的内容出现
-        //为什么这边用的线程等待，而不用隐式等待？                  因为这个元素是存在的，需要理解隐式等待存在的条件
+        //为什么这边用的线程等待，而不用隐式等待？
+//        Thread.sleep(4000)意思是等待4秒钟，如果没有这句加上pageContent本身就存在，
+//        所以它的内容就是最初没有点击时候的文本，不是我们所期望的。可见返样的方法本不是很
+//        好。所以尽量去使用显示的等待，提供了更多的方法来精确的控制同步。
         Thread.sleep(4000);
         Assert.assertTrue(message.getText().contains("Nunc nibh tortor"));
         driver.close();
