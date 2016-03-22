@@ -38,6 +38,8 @@ public class ConditionWaitDemo {
         //设置等待时间为10秒
         WebDriverWait wait = new WebDriverWait(driver, 10);
         //等待直到符合元素文本内容出现
+        //WebDriverWait每500毫秒调用一次ExpectedCondition直到正确的返回值。
+        //可见这样的好处就是随时控制所需要等待的地方，更加精确的控制所需要的条件
         wait.until(ExpectedConditions.textToBePresentInElementLocated(
                 By.id("pageContent"),
                 "Nunc nibh tortor"
