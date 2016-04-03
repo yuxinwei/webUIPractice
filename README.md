@@ -9,6 +9,10 @@ web UI实战
     - [一个业务实例](src/main/java/com/test/java/webui/accessBaiduDemo/SearchTestOnBaidu.java) -- 百度一下Test，并记录下第一个div的文本
 - SeleniumIDE
     - 定位元素方式
+        - id
+        - name
+        - css
+        - xpath(重点)
     - 使用
     - 录制回放
 - TestNG基本介绍
