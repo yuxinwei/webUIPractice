@@ -38,19 +38,19 @@ web UI实战
         - 等待
             - 隐式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ImplicitlyWaitDemo.java)
             - 显式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ConditionWaitDemo.java)
-            - 自定义期望条件同步
         - 检查元素
-            - 是否存在
-            - 状态
+            - 是否存在(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ElementPresentDemo.java)
+            - 状态(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ElementStatusCheckDemo.java)
         - 弹出窗口
-            - 名称识别
-            - 标题识别
-            - 内容识别
+            - 名称识别(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/WindowPopupDemo.java) -- windowsNameTest()
+            - 标题识别(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/WindowPopupDemo.java) -- windowsTitleTest()
+            - 内容识别(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/WindowPopupDemo.java) -- windowsContentTest()
         - 警告框
-            - 警告框
-            - 确认框
-            - 提示框
+            - 警告框(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/AlertDemo.java) -- alertTest()
+            - 确认框(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/AlertDemo.java) -- confirmTest()
         - 框架
+            - 通过id或者name进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByIdOrNameTest()
+            - 通过页面内容进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByContentTest()
 - TestNG数据驱动
 - TestNG xml运行
 
