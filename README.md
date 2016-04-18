@@ -58,6 +58,7 @@ web UI实战
             - 通过页面内容进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByContentTest()
 - TestNG数据驱动
 - TestNG xml运行
+- 模拟项目 自动化下单操作
 
 
 
