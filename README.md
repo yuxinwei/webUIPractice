@@ -10,6 +10,7 @@ web UI实战
     - [JavaScript](https://github.com/vagabond1-1983/blog/issues/40)
     - [DOM](https://github.com/vagabond1-1983/blog/issues/41)
     - [JQuery](https://github.com/vagabond1-1983/blog/issues/42)
+    - 作业：注册表单，包含交互
 - 不同浏览器访问baidu
     - [Firefox](src/main/java/com/test/java/webui/accessBaiduDemo/FirefoxAccessBaidu.java) -- 火狐访问百度
     - [Chrome](src/main/java/com/test/java/webui/accessBaiduDemo/ChromeAccessBaidu.java) -- Chrome访问百度
