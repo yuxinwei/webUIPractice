@@ -3,6 +3,10 @@ web UI实战
 
 - 基础知识概览
     - [HTML](https://github.com/vagabond1-1983/blog/issues/39)
+    - 作业： 设计一个注册表单
+          这个网页标题为：系统注册页面
+          表单包括：用户名、密码、确认密码、性别单选、所在省市、提交
+          表单要规范，用表格形式呈现
     - [JavaScript](https://github.com/vagabond1-1983/blog/issues/40)
     - [DOM](https://github.com/vagabond1-1983/blog/issues/41)
     - [JQuery](https://github.com/vagabond1-1983/blog/issues/42)
@@ -21,6 +25,7 @@ web UI实战
     - 使用
     - 录制回放
 - TestNG基本介绍
+    - 单元测试及框架 JUnit
     - TODO 什么是TestNG？跟JUnit区别在哪
     - [基本写法](src/main/java/com/test/java/testng/BasicDemo.java) -- before, test, after, assert
 - 基本API
