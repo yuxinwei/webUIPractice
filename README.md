@@ -27,7 +27,8 @@ web UI实战
     - 录制回放
 - TestNG基本介绍
     - 单元测试及框架 JUnit
-    - TODO 什么是TestNG？跟JUnit区别在哪
+    - 什么是TestNG？跟JUnit区别在哪
+    - 为什么用单元测试框架
     - [基本写法](src/main/java/com/test/java/testng/BasicDemo.java) -- before, test, after, assert
 - 基本API
     - WebDriver
