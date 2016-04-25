@@ -64,8 +64,10 @@ web UI实战
             - 通过id或者name进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByIdOrNameTest()
             - 通过页面内容进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByContentTest()
 - TestNG数据驱动
+    - DataProvider
 - TestNG xml运行
-- 模拟项目 自动化下单操作
+    - suite, test 套件的概念
+- 模拟项目 自动化下单操作 -- 用哪个网站做例子。在前面应该穿插这样的技术铺垫
 
 
 
