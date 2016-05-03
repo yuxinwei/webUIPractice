@@ -11,7 +11,8 @@ web UI实战
     - [DOM](https://github.com/vagabond1-1983/blog/issues/41)
     - [JQuery](https://github.com/vagabond1-1983/blog/issues/42)
     - 作业：注册表单完善，包含JavaScript交互（验证，请求展示数据--省的列表，提交后显示用户输入的内容详细信息）
-- 不同浏览器访问baidu
+- Selenium热身：不同浏览器自动化访问baidu
+-   - 软件安装：firefox, selenium IDE
     - [Firefox](src/main/java/com/test/java/webui/accessBaiduDemo/FirefoxAccessBaidu.java) -- 火狐访问百度
     - [Chrome](src/main/java/com/test/java/webui/accessBaiduDemo/ChromeAccessBaidu.java) -- Chrome访问百度
     - [IE](src/main/java/com/test/java/webui/accessBaiduDemo/IEAccessBaidu.java) -- IE访问百度
