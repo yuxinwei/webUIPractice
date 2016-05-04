@@ -1,0 +1,56 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function validate_email(field,alerttxt)
+        {
+            with (field)
+            {
+                apos=value.indexOf("@")
+                dotpos=value.lastIndexOf(".")
+                if (apos<1||dotpos-apos<2)
+                {alert(alerttxt);return false}
+                else {return true}
+            }
+        }
+
+
+        function validate_form(thisform)
+        {
+            with (thisform)
+            {
+                if (validate_email(email,"Not a valid e-mail address!")==false)
+                {email.focus();return false}
+            }
+        }
+    </script>
+</head>
+
+<body>
+<form action="submitpage.htm"onsubmit="return validate_form(this);" method="post">
+    Email: <input type="text" name="email" size="30">
+    <input type="submit" value="Submit">
+</form>
+</body>
+
+</html>
+
+<!--
+Refer: http://904353524-qq-com.iteye.com/blog/1556091
+with 语句 为一个或一组语句指定默认对象。
+
+用法：with (<对象>) <语句>;
+
+with 语句通常用来缩短特定情形下必须写的代码量。在下面的例子中，请注意 Math 的重复使用：
+
+x = Math.cos(3 * Math.PI) + Math.sin(Math.LN10);
+y = Math.tan(14 * Math.E);
+
+当使用 with 语句时，代码变得更短且更易读：
+
+with (Math) {
+   x = cos(3 * PI) + sin(LN10);
+   y = tan(14 * E);
+}
+
+this 对象 返回“当前”对象。在不同的地方，this 代表不同的对象。如果在 JavaScript 的“主程序”中（不在任何 function 中，不在任何事件处理程序中）使用 this，它就代表 window 对象；如果在 with 语句块中使用 this，它就代表 with 所指定的对象；如果在事件处理程序中使用 this，它就代表发生事件的对象。
+-->
