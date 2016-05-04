@@ -8,6 +8,7 @@ web UI实战
           表单包括：用户名、密码、确认密码、性别单选、所在省市、提交
           表单要规范，用表格形式呈现
     - [JavaScript](https://github.com/vagabond1-1983/blog/issues/40)
+        - 表单验证部分代码 - formValidate.html
         - 随堂练习：注册页面在提交时，检查用户名的合法性（不为空、首字母不是空格、_），如果不合法，提示输入不正确，重新输入，如果合法，提示用户名输入正确
     - [DOM](https://github.com/vagabond1-1983/blog/issues/41)
         - 随堂练习：用DOM查找元素的方式，重写检查用户名的方法
