@@ -11,7 +11,12 @@ web UI实战
         - 随堂练习：注册页面在提交时，检查用户名的合法性（不为空、首字母不是空格、_），如果不合法，提示输入不正确，重新输入，如果合法，提示用户名输入正确
     - [DOM](https://github.com/vagabond1-1983/blog/issues/41)
     - [JQuery](https://github.com/vagabond1-1983/blog/issues/42)
-    - 作业：注册表单完善，包含JavaScript交互（验证，请求展示数据--省的列表，提交后显示用户输入的内容详细信息）
+    - 作业：注册表单完善，包含JavaScript交互:
+        提交后验证下列字段：
+        用户名不能为空、用户名不能以数字开头
+        密码不少于8位
+        密码和确认密码相同
+        注册提交后，提示用户输入的信息：用户名，性别，所在省市
 - Selenium热身：不同浏览器自动化访问baidu
 -   - 软件安装：firefox, selenium IDE
     - [Firefox](src/main/java/com/test/java/webui/accessBaiduDemo/FirefoxAccessBaidu.java) -- 火狐访问百度
@@ -70,6 +75,12 @@ web UI实战
 - TestNG xml运行
     - suite, test 套件的概念
 - 模拟项目 自动化下单操作 -- 用哪个网站做例子。在前面应该穿插这样的技术铺垫
+
+
+
+附录：
+- 书籍文章推荐
+    - [JavaScript秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
 
 
 
