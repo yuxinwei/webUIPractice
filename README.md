@@ -13,6 +13,7 @@ web UI实战
     - [DOM](https://github.com/vagabond1-1983/blog/issues/41)
         - 随堂练习：用DOM查找元素的方式，重写检查用户名的方法
     - [JQuery](https://github.com/vagabond1-1983/blog/issues/42)
+        - 随堂练习：用JQuery查找元素的方式，重写检查用户名的方法
     - 作业：注册表单完善，包含JavaScript交互:
         提交后验证下列字段：
         用户名不能为空、用户名不能以数字开头
