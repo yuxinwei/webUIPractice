@@ -21,7 +21,7 @@ web UI实战
         密码和确认密码相同
         注册提交后，提示用户输入的信息：用户名，性别，所在省市
 - Selenium热身：不同浏览器自动化访问baidu
-    - 软件安装：firefox, selenium IDE
+    - 软件安装：firefox, selenium IDE [百度云盘的软件共享](http://yun.baidu.com/pcloud/album/info?uk=1913063318&album_id=2794016679837573555)
     - [Firefox](src/main/java/com/test/java/webui/accessBaiduDemo/FirefoxAccessBaidu.java) -- 火狐访问百度
     - [Chrome](src/main/java/com/test/java/webui/accessBaiduDemo/ChromeAccessBaidu.java) -- Chrome访问百度
     - [IE](src/main/java/com/test/java/webui/accessBaiduDemo/IEAccessBaidu.java) -- IE访问百度
