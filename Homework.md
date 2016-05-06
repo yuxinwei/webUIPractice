@@ -14,3 +14,4 @@
     - [xiaoma](src/main/java/com/test/java/blt/_20160423/xiaoma.html)
     - [fangweili](src/main/java/com/test/java/blt/_20160423/Fangweili_regist.html) --table的嵌套？用div布局
     - [qizhi](src/main/java/com/test/java/blt/_20160423/齐志.html) --select - option是一对控件组合
+    - [maxiaoyu](src/main/java/com/test/java/blt/_20160423/maxiaoyu.html) --input,select注意闭合
