@@ -1,0 +1,43 @@
+<!-- 设计一个注册表单
+这个网页标题为：系统注册页面
+表单包括：用户名、密码、确认密码、性别单选、所在省市、提交
+表单要规范，用表格形式呈现 -->
+
+<!DOCTYPE html>
+<html>
+
+<table border="1" align="center" width="500">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>提交表单</title>
+    <h1 align="center">系统注册页面 </h1>
+    <td>
+    <form>
+        <br />
+        用户名:
+        <input type="text" name="用户名" /> <br /><br />
+        密码:
+        <input type="text" name="密码" /> <br /><br />
+        <input type="radio" name="sex" value="男" /> Male<br /><br />
+        <input type="radio" name="sex" value="女" /> Female<br /><br />
+        请选择你所在的省:
+        <div>
+        <select name="select" id="select" size="7">
+            <option value="1">黑龙江省</option>
+            <option value="2">辽宁省</option>
+            <option value="3">江苏省</option>
+            <option value="4">安徽省</option>
+            <option value="5">河北省</option>
+            <option value="6">河南省</option>
+            <option value="7">山西省</option>
+            <option value="8">浙江省</option>
+        </select>
+
+        </div><br />
+
+        <input type="submit" value="提交"/>
+    </form>
+    </td>
+</head>
+</table>
+</html>

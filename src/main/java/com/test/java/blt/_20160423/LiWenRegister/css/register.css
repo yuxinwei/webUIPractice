@@ -1,0 +1,32 @@
+.header {
+    padding: 0px 0px 40px 20px;
+    font-size: 20px;
+}
+.item {
+    padding: 10px;
+    float: right;
+}
+.tag_input {
+    border: 1px solid #ddd;
+    color: #666;
+    font-size: 14px;
+    height: 16px;
+    padding: 11px 10px;
+    width: 328px;}
+select {
+    /*padding: 6px 30px;*/
+    /*height: 30px;*/
+    /*width: 200px;*/
+    font-size: 14px;
+}
+.sub_btn {
+    padding: 10px 15px;
+    margin: 30px 16px;
+    background: #3f89ec;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #ddd;
+    border: medium none;
+    font-size: 14px;
+}

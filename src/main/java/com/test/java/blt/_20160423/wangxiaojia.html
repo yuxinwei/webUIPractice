@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<!--乱码问题 指定页面的编码
+<head><meta charset="UTF-8"> </head>-->
+<style type="text/css">
+    div#container{width:500px}
+
+
+</style>
+<body>
+
+<div id="container">
+
+    <div id="header">
+        <h1 align="center">系统注册页面</h1>
+    </div>
+
+    <p >1、请输入用户名和密码：</p>
+    <form >
+        用户：
+        <input type="text" name="user">
+        <br />
+        <p> </p>
+        密码：
+        <input type="password" name="password">
+        <br />
+        <p> </p>
+        确认密码：
+        <input type="password" name="password">
+    </form>
+
+    <p>2、请选择性别：</p>
+    <form>
+        性别：
+        <br />
+        <p> </p>
+        <input type="radio" name="sex" value="male" /> 男
+        <br />
+        <input type="radio" name="sex" value="female" /> 女
+    </form>
+
+
+    <p>3、请选择省市：</p>
+    <select>
+        <option>省</option>
+        <option>浙江</option>
+        <option>北京</option>
+        <option>广州</option>
+    </select>
+
+    <select>
+        <option>市</option>
+        <option>杭州</option>
+        <option>绍兴</option>
+        <option>金华</option>
+    </select>
+
+    <p> </p>
+    <form name="input" action="/html/html_form_action.asp" method="get">
+        <input type="submit" value="提交">
+    </form>
+
+</div>
+</body>
+</html>
