@@ -16,13 +16,14 @@ web UI实战
         - 随堂练习：用JQuery查找元素的方式，重写检查用户名的方法
     - 作业：注册表单完善，包含JavaScript交互:
         提交后验证下列字段：
-        用户名不能为空、用户名不能以数字开头
+        用户名不能为空、用户名不能以数字0开头
         密码不少于8位
         密码和确认密码相同
         注册提交后，用户输入的信息展示：用户名，性别，所在省市
+        要求使用jquery方式验证
 - Selenium热身：不同浏览器自动化访问baidu
     - [什么是selenium](https://www.ibm.com/developerworks/cn/web/wa-selenium2/)
-    - 软件安装：firefox, selenium IDE [百度云盘的软件共享](http://yun.baidu.com/pcloud/album/info?uk=1913063318&album_id=2794016679837573555)
+    - 软件安装：firefox(安装到默认位置后，记得关闭更新), selenium IDE [百度云盘的软件共享](http://yun.baidu.com/pcloud/album/info?uk=1913063318&album_id=2794016679837573555)
     - [Firefox](src/main/java/com/test/java/webui/accessBaiduDemo/FirefoxAccessBaidu.java) -- 火狐访问百度
     - [Chrome](src/main/java/com/test/java/webui/accessBaiduDemo/ChromeAccessBaidu.java) -- Chrome访问百度
     - [IE](src/main/java/com/test/java/webui/accessBaiduDemo/IEAccessBaidu.java) -- IE访问百度
