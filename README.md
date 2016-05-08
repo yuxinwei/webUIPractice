@@ -21,7 +21,7 @@ web UI实战
         密码和确认密码相同
         注册提交后，用户输入的信息展示：用户名，性别，所在省市
         要求使用jquery方式验证
-    TODO AJAX异步请求：1.观察获取异步请求 2.JQUERY AJAX异步请求方式
+    TODO AJAX异步请求：1.观察获取异步请求 - baidu search 2.JQUERY AJAX异步请求方式
 - Selenium热身：不同浏览器自动化访问baidu
     - [什么是selenium](https://www.ibm.com/developerworks/cn/web/wa-selenium2/)
     - 软件安装：firefox(安装到默认位置后，记得关闭更新), selenium IDE [百度云盘的软件共享](http://yun.baidu.com/pcloud/album/info?uk=1913063318&album_id=2794016679837573555)
@@ -43,7 +43,8 @@ web UI实战
     - 什么是TestNG？跟JUnit区别在哪
     - 为什么用单元测试框架
     - [基本写法](src/main/java/com/test/java/testng/BasicDemo.java) -- before, test, after, assert
-- 基本API
+- WebDriver基本API
+    - [原理浅析](https://github.com/vagabond1-1983/webUIPractice/issues/7) TODO selenium1的原理 JavaScript沙箱
     - WebDriver
         - [浏览器最大化](src/main/java/com/test/java/webui/api/driver/MaximumBrowser.java)
     - WebElement
