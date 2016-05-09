@@ -35,6 +35,7 @@ web UI实战
         - id
         - name
         - css
+        - tag
         - xpath(重点)  http://www.w3school.com.cn/xpath/xpath_syntax.asp
     - 使用
     - 录制回放
