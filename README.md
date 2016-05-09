@@ -31,7 +31,7 @@ web UI实战
     - [小小封装下变成Common](src/main/java/com/test/java/webui/accessBaiduDemo/CommonAccessBaidu.java) -- 简单封装思路
     - [一个业务实例](src/main/java/com/test/java/webui/accessBaiduDemo/SearchTestOnBaidu.java) -- 百度一下Test，并记录下第一个div的文本
 - SeleniumIDE
-    - 定位元素方式
+    - 定位元素方式  baidu搜索为例
         - id
         - name
         - css
