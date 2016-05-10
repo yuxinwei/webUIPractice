@@ -39,9 +39,10 @@ web UI实战
         - xpath(重点)  http://www.w3school.com.cn/xpath/xpath_syntax.asp
     - 使用 软件介绍
     - 录制回放  演示用IDE录制回放登录百度
+    - 随堂：IDE录制回放登录百度
 - TestNG基本介绍
-    - 单元测试及框架 JUnit
-    - 什么是TestNG？跟JUnit区别在哪
+    - [单元测试及框架 JUnit](src/main/java/com/test/java/unit/junit/AddFunctionServiceTest.java)
+    - [什么是TestNG？跟JUnit区别在哪](https://github.com/vagabond1-1983/webUIPractice/issues/6)
     - 为什么用单元测试框架
     - [基本写法](src/main/java/com/test/java/testng/BasicDemo.java) -- before, test, after, assert
 - WebDriver基本API

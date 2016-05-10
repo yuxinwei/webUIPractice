@@ -1,4 +1,4 @@
-package com.test.java.testng;
+package com.test.java.unit.testng;
 
 import org.junit.Assert;
 import org.testng.annotations.AfterClass;
