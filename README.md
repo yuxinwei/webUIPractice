@@ -45,6 +45,7 @@ web UI实战
     - [什么是TestNG？跟JUnit区别在哪](https://github.com/vagabond1-1983/webUIPractice/issues/6)
     - 为什么用单元测试框架
     - [基本写法](src/main/java/com/test/java/testng/BasicDemo.java) -- before, test, after, assert
+    - 更好的利用TestNG构建Selenium自动化用例  BaseTest & AbstractAccessBaidu
 - WebDriver基本API
     - [原理浅析](https://github.com/vagabond1-1983/webUIPractice/issues/7) TODO selenium1的原理 JavaScript沙箱
     - WebDriver
