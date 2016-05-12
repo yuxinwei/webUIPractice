@@ -20,13 +20,13 @@ public class CommonAccessBaidu {
             }
             driver = new FirefoxDriver();
         } else if (browser.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver","d:\\Software\\SeleniumDriver\\chromedriver2.20.exe");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\driver\\chromedriver2.20.exe");
             if (!browserLocation.equals("")) {
                 System.setProperty("webdriver.chrome.bin", browserLocation);
             }
             driver = new ChromeDriver();
         } else {
-            System.setProperty("webdriver.ie.driver", "d:\\Software\\SeleniumDriver\\IEDriverServer2.48.exe");
+            System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\driver\\IEDriverServer2.48.exe");
             driver = new InternetExplorerDriver();
         }
         driver.get(url);
