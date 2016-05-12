@@ -29,13 +29,11 @@ web UI实战
     - [Chrome](src/main/java/com/test/java/webui/accessBaiduDemo/ChromeAccessBaidu.java) -- Chrome访问百度
     - [IE](src/main/java/com/test/java/webui/accessBaiduDemo/IEAccessBaidu.java) -- IE访问百度
     - [小小封装下变成Common](src/main/java/com/test/java/webui/accessBaiduDemo/CommonAccessBaidu.java) -- 简单封装思路
-    - [一个业务实例](src/main/java/com/test/java/webui/accessBaiduDemo/SearchTestOnBaidu.java) -- 百度一下Test，并记录下第一个div的文本
 - SeleniumIDE
-    - 定位元素方式  baidu搜索为例
+    - 定位元素方式  [baidu搜索为例](src/main/java/com/test/java/webui/seleniumIDE定位元素/seleniumIDE定位元素.md)
         - id
         - name
         - css
-        - tag
         - xpath(重点)  http://www.w3school.com.cn/xpath/xpath_syntax.asp
     - 使用 软件介绍
     - 录制回放  演示用IDE录制回放登录百度
@@ -43,14 +41,18 @@ web UI实战
 - TestNG基本介绍
     - [单元测试及框架 JUnit](src/main/java/com/test/java/unit/junit/AddFunctionServiceTest.java)
     - [什么是TestNG？跟JUnit区别在哪](https://github.com/vagabond1-1983/webUIPractice/issues/6)
-    - 为什么用单元测试框架
-    - [基本写法](src/main/java/com/test/java/testng/BasicDemo.java) -- before, test, after, assert
-    - 更好的利用TestNG构建Selenium自动化用例  BaseTest & AbstractAccessBaidu
+    - [为什么用单元测试框架驱动selenium](https://github.com/vagabond1-1983/webUIPractice/issues/9)
+        - 能够灵活的配置测试脚本（用例）运行Selenium脚本
+    - [TestNG基本写法](src/main/java/com/test/java/testng/BasicDemo.java) -- before, test, after, assert
 - WebDriver基本API
     - [原理浅析](https://github.com/vagabond1-1983/webUIPractice/issues/7) selenium1和2的原理
+    - 更好的利用TestNG构建Selenium自动化用例  BaseTest & AbstractAccessBaidu
+        - BestTest 作用：运行Test之前启动driver，运行Test之后退出driver
+        - AbstractAccessBaidu 作用：访问相同网站baidu。也可以扩展为在所有的Test之前登录百度网站
     - WebDriver
         - [浏览器最大化](src/main/java/com/test/java/webui/api/driver/MaximumBrowser.java)
     - WebElement
+        - [一个业务实例](src/main/java/com/test/java/webui/api/element/SearchTestOnBaidu.java) -- 百度一下Test，并记录下第一个div的文本
         - [getText](src/main/java/com/test/java/webui/api/element/GetTextTest.java) --获取元素文本
         - [getAttribute](src/main/java/com/test/java/webui/api/element/GetAttrubuteTest.java) --获取元素属性
 

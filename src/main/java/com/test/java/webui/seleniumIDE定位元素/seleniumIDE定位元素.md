@@ -6,8 +6,6 @@
     name=wd
 - css
     css=#kw
-- tag?
-    css=img
 - xpath
     - 通过属性值定位元素 //input[@id='kw']
     - 通过tag路径定位元素 //span/input

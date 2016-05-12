@@ -16,6 +16,7 @@ public abstract class BaseTest {
 
     @BeforeClass
     public void setUp() {
+        System.setProperty("webdriver.firefox.bin", "D:\\Program Files\\Mozilla Firefox\\firefox.exe");
         driver = new FirefoxDriver();
         jse = (JavascriptExecutor) driver;
         System.out.println("driver setted up");
