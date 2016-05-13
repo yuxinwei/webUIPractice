@@ -49,9 +49,9 @@ web UI实战
     - 更好的利用TestNG构建Selenium自动化用例  BaseTest & AbstractAccessBaidu
         - BestTest 作用：运行Test之前启动driver，运行Test之后退出driver
         - AbstractAccessBaidu 作用：访问相同网站baidu。也可以扩展为在所有的Test之前登录百度网站
-    - WebDriver
+    - WebDriver 接口
         - [浏览器最大化](src/main/java/com/test/java/webui/api/driver/MaximumBrowser.java)
-    - WebElement
+    - WebElement 接口
         - [一个业务实例](src/main/java/com/test/java/webui/api/element/SearchTestOnBaidu.java) -- 百度一下Test，并记录下第一个div的文本
         - [getText](src/main/java/com/test/java/webui/api/element/GetTextTest.java) --获取元素文本
         - [getAttribute](src/main/java/com/test/java/webui/api/element/GetAttrubuteTest.java) --获取元素属性
