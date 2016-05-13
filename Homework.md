@@ -15,3 +15,16 @@
     - [fangweili](src/main/java/com/test/java/blt/_20160423/Fangweili_regist.html) --table的嵌套？用div布局
     - [qizhi](src/main/java/com/test/java/blt/_20160423/齐志.html) --select - option是一对控件组合
     - [maxiaoyu](src/main/java/com/test/java/blt/_20160423/maxiaoyu.html) --input,select注意闭合
+
+- 20160507 注册表单完善，包含JavaScript交互
+  作业： 注册表单完善，包含JavaScript交互: 提交后验证下列字段：
+           用户名不能为空、
+           用户名不能以数字0开头
+           密码不少于8位 密码和确认密码相同
+           注册提交后，用户输入的信息展示：用户名，性别，所在省市 要求使用jquery方式验证
+    - [liwen](src/main/java/com/test/java/blt/_20160507/LiWenRegister/html/register.html) -- 非常不错
+    - [jiabin](src/main/java/com/test/java/blt/_20160507/jiabinRegistrationPage/registrationPage.html) -- 外部js放置位置
+    - [lichangxing](src/main/java/com/test/java/blt/_20160507/lichangxing.html) --js放置位置，密码type为password
+    - [wangxiaojia](src/main/java/com/test/java/blt/_20160507/wangxiaojia.html)
+    - [maxiaoyu](src/main/java/com/test/java/blt/_20160507/maxiaoyu.html)
+    - [weiyuxin](src/main/java/com/test/java/blt/_20160507/weiyuxin.html)

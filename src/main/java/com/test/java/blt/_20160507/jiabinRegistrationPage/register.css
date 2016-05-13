@@ -1,0 +1,18 @@
+
+#submitbutton {
+    width: 270px;height: 30px;background:#69a200;color:#fff;
+    border-radius:5px;border:none;margin-left: 10px;cursor:pointer;
+    margin-top: 30px;font-size: 15px;
+}
+
+.td_tips {
+    height: 20px; font-size: 15px;
+}
+
+.error_tip {
+    color: red;
+}
+
+body {
+    font-family: Microsoft YaHei,Hiragino Sans GB;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>系统注册页</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#submit").click(function(){
+                var username = $("#username").val();
+                var password = $("#password").val();
+                var comformpassword = $("#comformpassword").val();
+                var sex = $(":radio:checked").val();
+                var province = $("#province").val();
+                if (username.length==0 || username.indexOf("0") == 0){
+                    alert("用户名输入不正确，请重新输入");
+                }else if (password.length<8){
+                    alert("密码长度不能少于8位，请重新输入");
+                }else if (comformpassword.length<8){
+                    alert("确认密码长度不能少于8位，请重新输入");
+                }else if (password!=comformpassword){
+                    alert("密码和确认密码需要相同，请重新输入");
+                }else {
+                    alert("用户名："+username+" "+"性别："+sex+" "+"所在省市："+province);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<form>
+    <table  border="1" align="center">
+        <tr>
+            <td>用户名</td>
+            <td><input type="text" id="username" name="username"/></td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td><input type="password" id="password" name="password" /></td>
+        </tr>
+        <tr>
+            <td>确认密码</td>
+            <td><input type="password" id ="comformpassword" name="comformpassword" /></td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td>男性<input type="radio" checked="checked" id="sexman" name="sex" value="男性" />女性<input type="radio" id="sexwoman" name="sex" value="女性" /></td>
+        </tr>
+        <tr>
+            <td>所在省</td>
+            <td><select id ="province" name="province">
+                <option value="广东省" selected="selected">广东省</option>
+                <option value="广西省">广西省</option>
+                <option value="山东省">山东省</option>
+                <option value="山西省">山西省</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" id="submit" value="提交" /></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

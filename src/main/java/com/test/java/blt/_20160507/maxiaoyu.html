@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        系统注册页面
+    </title>
+</head>
+<script src = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+</script>
+<script>
+    $( document ).ready( function(){
+        $( "#submit" ).click( function() {
+            var userValue = $( "#user" ).val();
+            var passwordValue = $( "#password" ).val();
+            var repasswordValue = $( "#repassword" ).val();
+            var sex = $( "input[name = sex]:checked" ).val();
+            var city = $( "#city" ).val();
+            //用户名校验
+            if ( userValue.length == 0 ) {
+                alert( "用户名不能为空" );
+                return false;
+            }
+            else if ( userValue.charAt(0) == " "|| userValue.charAt(0) == "_"|| userValue.charAt(0) == 0 ) {
+                alert( "首字母不能是空格、数字0、下划线，请重新输入" );
+                return false;
+            }
+            //密码校验
+            else if ( passwordValue.length < 8 ) {
+                alert( "密码长度不能小于8位" );
+                return false;
+            }
+            else if ( passwordValue != repasswordValue ) {
+                alert( "两次输入的密码不相同" );
+                return false;
+            }
+            //输出表单信息
+            else {
+                alert("用户名：" + userValue + "，密码：" + passwordValue + "，性别：" + sex + "，所在省市：" + city );
+                return true;
+            }
+        });
+    });
+</script>
+<body bgcolor = "#d0d0d0">
+    <div style = "position:relative;margin:50px 150px">
+    <h2>注册表单</h2>
+    <br>
+        <table>
+            <tbody>
+            <tr>
+                <td>用户名</td>
+                <td><input type ="text" id = "user" name = "user"></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input type = "password" id = "password" name = "password"></td>
+            </tr>
+            <tr>
+                <td>确认密码</td>
+                <td><input type = "password" id = "repassword" name = "repassword"></td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    <input type = "radio" name = "sex" value = "男" checked = "true">男
+                    <input type = "radio" name = "sex" value = "女">女
+                </td>
+            </tr>
+            <tr>
+                <td>所在省市</td>
+                <td>
+                    <select id = "city" name = "city">
+                        <option value = "北京">北京</option>
+                        <option value = "上海">上海</option>
+                        <option value = "广州">广州</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        </br>
+        <input type = "submit" id = "submit" value = "提交">
+    </form>
+    </div>
+</body>
+</html>
