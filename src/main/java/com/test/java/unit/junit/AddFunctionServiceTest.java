@@ -1,6 +1,7 @@
 package com.test.java.unit.junit;
 
 import com.test.java.unit.service.AddFunctionService;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
@@ -11,10 +12,21 @@ import org.junit.Test;
  * 让我们扩展AddFunctionService，添加更多的方法，展示框架的强大之处
  */
 public class AddFunctionServiceTest {
-    private AddFunctionService addFunctionService;
+    private static AddFunctionService addFunctionService;
+
+    @BeforeClass
+    public static void before() {
+        System.out.println("before");
+        addFunctionService = new AddFunctionService();
+    }
+
     @Test
     public void addTest() {
-        addFunctionService = new AddFunctionService();
         System.out.println(addFunctionService.add(1, 1));
+    }
+
+    @Test
+    public void plusTest() {
+        System.out.println(addFunctionService.plus(1,1));
     }
 }

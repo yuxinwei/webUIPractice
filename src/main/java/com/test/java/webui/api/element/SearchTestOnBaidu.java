@@ -13,12 +13,13 @@ import java.util.List;
  */
 public class SearchTestOnBaidu extends AbstractAccessBaidu {
     @Test
-    public void searchTest() {
+    public void searchTest() throws InterruptedException {
         WebElement searchInput = driver.findElement(By.id("kw"));
         searchInput.sendKeys("Test");
         WebElement submitButton = driver.findElement(By.id("su"));
-        submitButton.click();
+        submitButton.submit();
 
+        Thread.sleep(3000);
         List<WebElement> results = driver.findElements(By.xpath("//div[@class='result c-container ']"));
         System.out.println(results.get(0).getText());
     }

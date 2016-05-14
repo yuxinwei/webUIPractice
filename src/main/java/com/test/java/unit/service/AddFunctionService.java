@@ -7,4 +7,8 @@ public class AddFunctionService {
     public int add(int first, int second) {
         return first + second;
     }
+
+    public int plus(int first, int second) {
+        return first + second + second;
+    }
 }

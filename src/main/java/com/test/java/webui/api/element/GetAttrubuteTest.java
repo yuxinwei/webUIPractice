@@ -14,6 +14,6 @@ public class GetAttrubuteTest extends AbstractAccessBaidu {
     public void checkHrefNuoMi() {
         WebElement linkElement = driver.findElement(By.xpath("//a[contains(text(),'糯米')]"));
         String link = linkElement.getAttribute("href");
-        Assert.assertTrue(link.contains("www.nuomi.com"), "href实际为：" + link);
+        Assert.assertTrue(link.contains("www.nuomi.com1"), "href实际为：" + link);
     }
 }

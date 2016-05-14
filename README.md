@@ -56,6 +56,8 @@ web UI实战
         - [getText](src/main/java/com/test/java/webui/api/element/GetTextTest.java) --获取元素文本
         - [getAttribute](src/main/java/com/test/java/webui/api/element/GetAttrubuteTest.java) --获取元素属性
 
+
+    TODO test-output 测试报告
 - 高级技巧
     - Actions(键盘事件、鼠标双击)
         - [鼠标双击](src/main/java/com/test/java/webui/api/highLevelSkills/actions/ActionsDemo)
