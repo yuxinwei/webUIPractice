@@ -57,7 +57,7 @@ web UI实战
         - [getAttribute](src/main/java/com/test/java/webui/api/element/GetAttrubuteTest.java) --获取元素属性
 
 
-    TODO test-output 测试报告
+    test-output 测试报告  reportNG 高级特性
 - 高级技巧
     - Actions(键盘事件、鼠标双击)
         - [鼠标双击](src/main/java/com/test/java/webui/api/highLevelSkills/actions/ActionsDemo)
@@ -88,6 +88,7 @@ web UI实战
     - DataProvider
 - TestNG xml运行
     - suite, test 套件的概念
+- TestNG 美化版报告 ReportNG
 - 模拟项目 自动化下单操作 -- 用哪个网站做例子。在前面应该穿插这样的技术铺垫
 
 
