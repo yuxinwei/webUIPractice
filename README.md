@@ -88,7 +88,9 @@ web UI实战
     - DataProvider
 - TestNG xml运行
     - suite, test 套件的概念
-- TestNG 美化版报告 ReportNG
+- TestNG Listeners
+    - 应用一：编写自己的listener
+    - 应用二：美化版报告 ReportNG
 - 模拟项目 自动化下单操作 -- 用哪个网站做例子。在前面应该穿插这样的技术铺垫
 
 
