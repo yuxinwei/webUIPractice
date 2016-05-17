@@ -67,13 +67,14 @@ web UI实战
         - [截图功能](src/main/java/com/test/java/webui/api/screenshot/highLevelSkills/TakesScreenshotTest.java)
     - 下拉列表
         - [选择下拉列表中的值](src/main/java/com/test/java/webui/api/highLevelSkills/select/SelectDemo.java)
+    - 随堂：完成注册功能的自动化，并检验注册成功与否
     - 测试流控制
         - 等待
             - 隐式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ImplicitlyWaitDemo.java)
             - 显式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ConditionWaitDemo.java)
             - 改进SearchTestOnBaidu的等待方式
         - 检查元素
-            - 是否存在(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ElementPresentDemo.java)
+            - 是否存在(src/main/java/com/test/java/webui/api/highLevelSkills/testFlo    wControl/ElementPresentDemo.java)
             - 状态(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ElementStatusCheckDemo.java)
         - 弹出窗口
             - 名称识别(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/WindowPopupDemo.java) -- windowsNameTest()
@@ -85,6 +86,7 @@ web UI实战
         - 框架
             - 通过id或者name进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByIdOrNameTest()
             - 通过页面内容进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByContentTest()
+        - 随堂：完成登录并添加商品到购物车的操作
 - TestNG数据驱动
     - DataProvider
         - [基本写法](src/main/java/com/test/java/unit/testng/DataProviderDemo.java)
