@@ -71,6 +71,7 @@ web UI实战
         - 等待
             - 隐式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ImplicitlyWaitDemo.java)
             - 显式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ConditionWaitDemo.java)
+            - 改进SearchTestOnBaidu的等待方式
         - 检查元素
             - 是否存在(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ElementPresentDemo.java)
             - 状态(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ElementStatusCheckDemo.java)
@@ -86,8 +87,10 @@ web UI实战
             - 通过页面内容进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByContentTest()
 - TestNG数据驱动
     - DataProvider
+        - [基本写法](src/main/java/com/test/java/unit/testng/DataProviderDemo.java)
+        - [实际用法 - 登录]()
 - TestNG xml运行
-    - suite, test 套件的概念
+    - suite, test 套件的概念 TestRun.xml
 - TestNG Listeners
     - 应用一：编写自己的listener
     - 应用二：美化版报告 ReportNG
