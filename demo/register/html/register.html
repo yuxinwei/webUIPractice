@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="设计一个注册表单,这个网页标题为：系统注册页面,表单包括：用户名、密码、确认密码、性别单选、所在省市、提交,表单要规范，用表格形式呈现">
+    <title>系统注册页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/register.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script src="../js/register.js"></script>
+</head>
+<body>
+    <div style="position:relative;margin: 50px 150px;" id="result">
+        <form method="post" name="sign" id="myform">
+            <table>
+                <thead>
+                <tr>
+                    <td colspan="2" class="header">用户注册</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="item">用户名</td>
+                    <td><input type="text" placeholder="用户名" class="tag_input" name="username" maxlength="20" id="username"></td>
+                </tr>
+                <tr>
+                    <td class="item">密码</td>
+                    <td>
+                        <input type="password" placeholder="密码" class="tag_input" name="password" maxlength="10" id = password>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">确认密码</td>
+                    <td><input type="password" placeholder="请输入确认密码" class="tag_input" name="repassword" maxlength="10" id="repassword"></td>
+                </tr>
+                <tr>
+                    <td class="item">性别</td>
+                    <td>
+                        <input type="radio"  name="sex" value="女" checked="true">女
+                        <input type="radio"  name="sex" value="男">男
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">所在省市</td>
+                    <td>
+                        <select name="province" id="province">
+                            <option value="北京">北京</option>
+                            <option value="河北">河北</option>
+                            <option value="乌鲁木齐">乌鲁木齐</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" id="submit" value="提交" class="sub_btn">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

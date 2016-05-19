@@ -56,7 +56,6 @@ web UI实战
         - [getText](src/main/java/com/test/java/webui/api/element/GetTextTest.java) --获取元素文本
         - [getAttribute](src/main/java/com/test/java/webui/api/element/GetAttrubuteTest.java) --获取元素属性
 
-
     test-output 测试报告  reportNG 高级特性
 - 高级技巧
     - Actions(键盘事件、鼠标双击)
@@ -67,7 +66,7 @@ web UI实战
         - [截图功能](src/main/java/com/test/java/webui/api/screenshot/highLevelSkills/TakesScreenshotTest.java)
     - 下拉列表
         - [选择下拉列表中的值](src/main/java/com/test/java/webui/api/highLevelSkills/select/SelectDemo.java)
-    - 随堂：完成注册功能的自动化，并检验注册成功与否
+    - 随堂：完成注册页面的自动化，并检验注册成功页面是否打开并截图
     - 测试流控制
         - 等待
             - 隐式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ImplicitlyWaitDemo.java)
@@ -96,6 +95,7 @@ web UI实战
 - TestNG Listeners
     - 应用一：编写自己的listener
     - 应用二：美化版报告 ReportNG
+- Page Object 框架
 - 模拟项目 自动化下单操作 -- 用哪个网站做例子。在前面应该穿插这样的技术铺垫
 
 
