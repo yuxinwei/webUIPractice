@@ -4,6 +4,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -13,12 +14,14 @@ import org.testng.annotations.BeforeClass;
 public abstract class BaseTest {
     protected WebDriver driver;
     protected JavascriptExecutor jse;
+    protected WebDriverWait wait;
 
     @BeforeClass
     public void setUp() {
         System.setProperty("webdriver.firefox.bin", "D:\\Program Files\\Mozilla Firefox\\firefox.exe");
         driver = new FirefoxDriver();
         jse = (JavascriptExecutor) driver;
+        wait = new WebDriverWait(driver, 10);
         System.out.println("driver setted up");
     }
 

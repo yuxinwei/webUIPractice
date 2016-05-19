@@ -1,8 +1,10 @@
 package com.test.java.webui.api.highLevelSkills.testFlowControl;
 
 import com.test.java.webui.api.base.AbstractAccessBaidu;
-import junit.framework.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
@@ -24,7 +26,10 @@ public class ElementPresentDemo extends AbstractAccessBaidu {
 
     private boolean isElementPresent(By by) {
         try {
-            driver.findElement(by);
+            WebElement result = wait.until(ExpectedConditions.presenceOfElementLocated(by));
+            if (null == result) {
+                return false;
+            }
             return true;
         } catch (Exception e) {
             e.printStackTrace();

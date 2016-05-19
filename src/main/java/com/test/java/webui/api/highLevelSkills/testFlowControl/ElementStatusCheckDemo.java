@@ -1,9 +1,9 @@
 package com.test.java.webui.api.highLevelSkills.testFlowControl;
 
 import com.test.java.webui.api.base.AbstractLocalHtml;
-import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;

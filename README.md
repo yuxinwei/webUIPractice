@@ -52,39 +52,40 @@ web UI实战
     - WebDriver 接口
         - [浏览器最大化](src/main/java/com/test/java/webui/api/driver/MaximumBrowser.java)
     - WebElement 接口
-        - [一个业务实例](src/main/java/com/test/java/webui/api/element/SearchTestOnBaidu.java) -- 百度一下Test，并记录下第一个div的文本
+        - *****[一个业务实例](src/main/java/com/test/java/webui/api/element/SearchTestOnBaidu.java) -- 百度一下Test，并记录下第一个div的文本
         - [getText](src/main/java/com/test/java/webui/api/element/GetTextTest.java) --获取元素文本
         - [getAttribute](src/main/java/com/test/java/webui/api/element/GetAttrubuteTest.java) --获取元素属性
 
     test-output 测试报告  reportNG 高级特性
 - 高级技巧
     - Actions(键盘事件、鼠标双击)
-        - [鼠标双击](src/main/java/com/test/java/webui/api/highLevelSkills/actions/ActionsDemo)
+        - *****[鼠标双击](src/main/java/com/test/java/webui/api/highLevelSkills/actions/ActionsDemo)
     - 执行JS
-        - [用jQuery框架辅助](src/main/java/com/test/java/webui/api/highLevelSkills/jsExecutor/SelectElement.java)
+        - ***[用jQuery框架辅助](src/main/java/com/test/java/webui/api/highLevelSkills/jsExecutor/SelectElement.java)
     - 截图
-        - [截图功能](src/main/java/com/test/java/webui/api/screenshot/highLevelSkills/TakesScreenshotTest.java)
+        - *****[截图功能](src/main/java/com/test/java/webui/api/screenshot/highLevelSkills/TakesScreenshotTest.java)
     - 下拉列表
         - [选择下拉列表中的值](src/main/java/com/test/java/webui/api/highLevelSkills/select/SelectDemo.java)
     - 随堂：完成注册页面的自动化，并检验注册成功页面是否打开并截图
     - 测试流控制
-        - 等待
-            - 隐式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ImplicitlyWaitDemo.java)
-            - 显式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ConditionWaitDemo.java)
+        - 等待 *****
+            - ****隐式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ImplicitlyWaitDemo.java)
+            - *****显式等待(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ConditionWaitDemo.java)
+            - 简单来说，隐式等待是符合时间要求 - 超时时间，而显示等待是符合自定义条件，更灵活
             - 改进SearchTestOnBaidu的等待方式
-        - 检查元素
-            - 是否存在(src/main/java/com/test/java/webui/api/highLevelSkills/testFlo    wControl/ElementPresentDemo.java)
-            - 状态(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ElementStatusCheckDemo.java)
+        - 检查元素 *****
+            - *****是否存在(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ElementPresentDemo.java)
+            - ***状态(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/ElementStatusCheckDemo.java)
         - 弹出窗口
-            - 名称识别(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/WindowPopupDemo.java) -- windowsNameTest()
-            - 标题识别(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/WindowPopupDemo.java) -- windowsTitleTest()
-            - 内容识别(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/WindowPopupDemo.java) -- windowsContentTest()
+            - ***名称识别(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/WindowPopupDemo.java) -- windowsNameTest()
+            - ***标题识别(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/WindowPopupDemo.java) -- windowsTitleTest()
+            - ****内容识别(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/WindowPopupDemo.java) -- windowsContentTest()
         - 警告框
-            - 警告框(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/AlertDemo.java) -- alertTest()
-            - 确认框(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/AlertDemo.java) -- confirmTest()
+            - ****警告框(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/AlertDemo.java) -- alertTest()
+            - ****确认框(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/AlertDemo.java) -- confirmTest()
         - 框架
-            - 通过id或者name进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByIdOrNameTest()
-            - 通过页面内容进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByContentTest()
+            - ***通过id或者name进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByIdOrNameTest()
+            - ***通过页面内容进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByContentTest()
         - 随堂：完成登录并添加商品到购物车的操作
 - TestNG数据驱动
     - DataProvider
@@ -94,7 +95,7 @@ web UI实战
     - suite, test 套件的概念 TestRun.xml
 - TestNG Listeners
     - 应用一：编写自己的listener
-    - 应用二：美化版报告 ReportNG
+    - 应用二：美化版报告 ReportNG pom文件的配置  会配置，能说出来即可
 - Page Object 框架
 - 模拟项目 自动化下单操作 -- 用哪个网站做例子。在前面应该穿插这样的技术铺垫
 
