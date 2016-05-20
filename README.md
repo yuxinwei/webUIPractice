@@ -86,11 +86,11 @@ web UI实战
         - 框架
             - ***通过id或者name进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByIdOrNameTest()
             - ***通过页面内容进入框架(src/main/java/com/test/java/webui/api/highLevelSkills/testFlowControl/FrameDemo.java) -- frameByContentTest()
-        - 随堂：完成登录并添加商品到购物车的操作
+        - 作业：完成登录苏宁易购并添加商品到购物车的操作
 - TestNG数据驱动
     - DataProvider
         - [基本写法](src/main/java/com/test/java/unit/testng/DataProviderDemo.java)
-        - [实际用法 - 登录]()
+        - [实际用法 - 登录](不同账号登录苏宁网站)
 - TestNG xml运行
     - suite, test 套件的概念 TestRun.xml
 - TestNG Listeners
