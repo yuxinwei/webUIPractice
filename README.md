@@ -30,7 +30,7 @@ web UI实战
     - [IE](src/main/java/com/test/java/webui/accessBaiduDemo/IEAccessBaidu.java) -- IE访问百度
     - [小小封装下变成Common](src/main/java/com/test/java/webui/accessBaiduDemo/CommonAccessBaidu.java) -- 简单封装思路
 - SeleniumIDE
-    - 定位元素方式  [baidu搜索为例](src/main/java/com/test/java/webui/seleniumIDE定位元素/seleniumIDE定位元素.md)
+    - 定位元素方式 ?  [baidu搜索为例](src/main/java/com/test/java/webui/seleniumIDE定位元素/seleniumIDE定位元素.md)
         - id
         - name
         - css
@@ -44,8 +44,9 @@ web UI实战
     - [为什么用单元测试框架驱动selenium](https://github.com/vagabond1-1983/webUIPractice/issues/9)
         - 能够灵活的配置测试脚本（用例）运行Selenium脚本
     - [TestNG基本写法](src/main/java/com/test/java/testng/BasicDemo.java) -- before, test, after, assert
+    有哪些基本注解?
 - WebDriver基本API
-    - [原理浅析](https://github.com/vagabond1-1983/webUIPractice/issues/7) selenium1和2的原理
+    - [原理浅析?](https://github.com/vagabond1-1983/webUIPractice/issues/7) selenium1和2的原理
     - 更好的利用TestNG构建Selenium自动化用例  BaseTest & AbstractAccessBaidu
         - BestTest 作用：运行Test之前启动driver，运行Test之后退出driver
         - AbstractAccessBaidu 作用：访问相同网站baidu。也可以扩展为在所有的Test之前登录百度网站
@@ -96,7 +97,7 @@ web UI实战
 - TestNG Listeners
     - 应用一：编写自己的listener
     - 应用二：美化版报告 ReportNG pom文件的配置  会配置，能说出来即可
-- Page Object 框架
+- Page Factory 框架
 - 模拟项目 自动化下单操作 -- 用哪个网站做例子。在前面应该穿插这样的技术铺垫
 
 
