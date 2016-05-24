@@ -3,6 +3,8 @@ package com.test.java.webui.api.element;
 import com.test.java.webui.api.base.AbstractAccessBaidu;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -19,7 +21,10 @@ public class SearchTestOnBaidu extends AbstractAccessBaidu {
         WebElement submitButton = driver.findElement(By.id("su"));
         submitButton.submit();
 
-        Thread.sleep(3000);
+//        Thread.sleep(3000);
+//        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='result c-container ']")));
         List<WebElement> results = driver.findElements(By.xpath("//div[@class='result c-container ']"));
         System.out.println(results.get(0).getText());
     }

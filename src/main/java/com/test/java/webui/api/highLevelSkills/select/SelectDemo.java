@@ -18,6 +18,7 @@ public class SelectDemo extends AbstractLocalHtml {
         //验证下拉列表的数量
         Assert.assertEquals(4, make.getOptions().size());
         //通过value属性来选择选项
+        //抛异常，NoSuchElementException
 //        make.selectByValue("Audi");
         //通过索引来选择选项
         make.selectByIndex(3);
