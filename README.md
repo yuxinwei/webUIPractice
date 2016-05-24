@@ -99,9 +99,9 @@ web UI实战
     - 应用二：美化版报告 ReportNG pom文件的配置  会配置，能说出来即可
     - Arrow
 - Page Factory 框架
-    - 简单介绍Page Factory编程方式(src/main/java/com/test/java/webui/PageFactoryDriveLoginWithSimplePOM.java)
-    - 数据和脚本分离
-- 模拟项目 自动化下单操作 -- 用哪个网站做例子。在前面应该穿插这样的技术铺垫
+    - [简单介绍Page Factory编程方式](src/main/java/com/test/java/webui/PageFactory/DriveLoginWithSimplePOM.java)
+    - [数据和脚本分离](src/main/java/com/test/java/webui/PageFactory/LoginDrive.java)
+- 模拟项目 自动化下单操作 苏宁的购买商品过程
 
 
 
@@ -109,6 +109,7 @@ web UI实战
 - 书籍文章推荐
     - [JavaScript秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
     - [PageFactory官方说明](https://github.com/SeleniumHQ/selenium/wiki/PageFactory)
+    - [深入TestNG](http://www.shenyanchao.cn/blog/2013/06/05/deep-in-testng/)
 
 
 
