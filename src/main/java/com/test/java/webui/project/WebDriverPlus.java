@@ -56,6 +56,10 @@ public class WebDriverPlus {
         return this;
     }
 
+    public String getTitle() {
+        return driver.getTitle();
+    }
+
     public WebDriverWait getWait() {
         return wait;
     }

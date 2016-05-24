@@ -1,10 +1,13 @@
 package com.test.java.webui.project.Page;
 
 import com.test.java.webui.project.WebDriverPlus;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
@@ -34,7 +37,6 @@ public abstract class AbstractBasePage {
         return driver.getTitle();
     }
 
-    /*
     public WebElement findElement(By locator) {
         if (isElementPresent(locator)) {
             return driver.findElement(locator);
@@ -62,8 +64,11 @@ public abstract class AbstractBasePage {
         return false;
     }
 
+    public boolean textToBePresent(WebElement element, String text) {
+        return wait.until(ExpectedConditions.textToBePresentInElement(element, text));
+    }
+
     public boolean isElementMatch(By locator, String text) {
         return wait.until((ExpectedConditions.textToBePresentInElementLocated(locator, text)));
     }
-    */
 }

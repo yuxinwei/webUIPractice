@@ -22,6 +22,9 @@ public class LoginPage extends AbstractBasePage {
     @FindBy(how = How.ID, using = "submit")
     WebElement submit;
 
+    @FindBy(how = How.ID, using = "usernameHtml02")
+    WebElement usernameCheckpoint;
+
     public void typeUsername(String _username) {
         username.clear();
         username.sendKeys(_username);
@@ -32,7 +35,12 @@ public class LoginPage extends AbstractBasePage {
         password.sendKeys(_password);
     }
 
+    public boolean isLoginedIn(String text) {
+        return textToBePresent(usernameCheckpoint, text);
+    }
+
     public void login() {
+        System.out.println("开始登录");
         submit.click();
     }
 }
