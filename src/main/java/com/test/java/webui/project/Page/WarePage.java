@@ -14,10 +14,17 @@ public class WarePage extends AbstractBasePage {
         super(webDriverPlus);
     }
 
+    @FindBy(how = How.ID, using = "buyNum")
+    WebElement buyNum;
+
     @FindBy(how = How.ID, using = "buyNowAddCart")
     WebElement buyButton;
 
+    private void addNum(String num) {
+        buyNum.sendKeys(num);
+    }
+
     public void addCart() {
-        buyButton.click();
+        moveToElement(buyButton).click();
     }
 }

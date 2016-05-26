@@ -36,6 +36,9 @@ public class CartPage extends AbstractBasePage {
     @FindBy(how = How.ID, using = "sh_receive_address")
     WebElement address;
 
+    @FindBy(how = How.ID, using = "submit-btn")
+    WebElement submit;
+
     public void typeReceiveName(String name) {
         receiveName.sendKeys(name);
     }
@@ -54,5 +57,9 @@ public class CartPage extends AbstractBasePage {
 
     public void typeAddress(String addr) {
         address.sendKeys(addr);
+    }
+
+    public void submitOrder() {
+        submit.click();
     }
 }

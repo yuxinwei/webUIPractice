@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -70,5 +71,19 @@ public abstract class AbstractBasePage {
 
     public boolean isElementMatch(By locator, String text) {
         return wait.until((ExpectedConditions.textToBePresentInElementLocated(locator, text)));
+    }
+
+    public Object executeJS(String js) {
+        return jse.executeScript(js);
+    }
+
+    public void executeAsyncJS(String js) {
+        jse.executeAsyncScript(js);
+    }
+
+    public WebElement moveToElement(WebElement element) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).build().perform();
+        return element;
     }
 }
