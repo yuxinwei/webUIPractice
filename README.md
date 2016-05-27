@@ -91,17 +91,21 @@ web UI实战
 - TestNG数据驱动
     - DataProvider
         - [基本写法](src/main/java/com/test/java/unit/testng/DataProviderDemo.java)
-        - [实际用法 - 登录](不同账号登录苏宁网站)
+        - 实际用法 - 多账户登录验证 后面项目涉及
 - TestNG xml运行
     - suite, test 套件的概念 TestRun.xml
 - TestNG Listeners
     - 应用一：编写自己的listener
     - 应用二：美化版报告 ReportNG pom文件的配置  会配置，能说出来即可
-    - Arrow
+    - [Arrow自学](https://github.com/NetEase/arrow)
 - Page Factory 框架
     - [简单介绍Page Factory编程方式](src/main/java/com/test/java/webui/PageFactory/DriveLoginWithSimplePOM.java)
     - [数据和脚本分离](src/main/java/com/test/java/webui/PageFactory/LoginDrive.java)
 - 模拟项目 自动化下单操作 苏宁的购买商品过程
+    - 增强WebDriver类，WebDriverPlus，不用每次都初始化一堆driver，可以根据条件初始化
+    - AbstractBasePage，创建基础方法供子类调用，如执行js，判断元素等
+    - 把数据放到文件中，用数据驱动脚本  InvokeData -- 测试用例脚本需要继承InvokeData，读数据的方法才能起作用
+    - 把流程拆开，login一般用在before阶段，商品、下单和查看变成多个测试用例
 
 
 

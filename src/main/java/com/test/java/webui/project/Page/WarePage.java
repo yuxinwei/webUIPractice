@@ -14,6 +14,14 @@ public class WarePage extends AbstractBasePage {
         super(webDriverPlus);
     }
 
+    @FindBy(how = How.ID, using = "addCart")
+    WebElement addToCart;
+
+    public void toCart() {
+        addToCart.click();
+    }
+
+
     @FindBy(how = How.ID, using = "buyNum")
     WebElement buyNum;
 
