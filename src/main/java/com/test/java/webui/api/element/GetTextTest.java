@@ -15,4 +15,9 @@ public class GetTextTest extends AbstractAccessBaidu{
         WebElement loginElement = driver.findElement(By.xpath("(//a[contains(text(),'登录')])[2]"));
         Assert.assertTrue(loginElement.getText().equals("登录"), loginElement.getText());
     }
+
+    @Test
+    public void test() {
+        System.out.println("ss");
+    }
 }

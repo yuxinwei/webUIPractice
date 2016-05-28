@@ -35,7 +35,6 @@ public class WebDriverPlus {
         } else {
             System.setProperty("webdriver.firefox.bin", "D:\\Program Files\\Mozilla Firefox\\firefox.exe");
             driver = new FirefoxDriver();
-
         }
 
         jse = (JavascriptExecutor) driver;

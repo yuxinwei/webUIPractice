@@ -11,7 +11,11 @@ import org.testng.annotations.Test;
 public class DataProviderDemo {
     @DataProvider(name = "loginData")
     public Object[][] data() {
-        return new Object[][]{{"user1", "pass1"}, {"user2", "pass2"}};
+        return new Object[][]
+                {
+                    {"user1", "pass1"},
+                    {"user2", "pass2"},
+                };
     }
 
     @Test(dataProvider = "loginData")
@@ -19,8 +23,8 @@ public class DataProviderDemo {
         System.out.println(username + " " + password);
     }
 
-    @Test(dataProvider = "loginData")
-    public void testWrongParamNumber(String username, String password, String test) {
-        System.out.println(username + " " + password + " " + test);
-    }
+//    @Test(dataProvider = "loginData")
+//    public void testWrongParamNumber(String username, String password, String test) {
+//        System.out.println(username + " " + password + " " + test);
+//    }
 }
