@@ -9,6 +9,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.awt.*;
+
 /**
  * Created by beigui on 2016/5/19.
  */
@@ -32,17 +34,17 @@ public class AutoOrder extends InvokeData {
     }
 
     @Test(dataProvider = "csv")
-    public void order(String ware_url, String order_view) throws InterruptedException {
+    public void order(String ware_url, String cart_url, String order_view) throws InterruptedException, AWTException {
         System.out.println("转到商品页，url=" + ware_url);
         driverPlus.get(ware_url);
 
         WarePage warePage = new WarePage(driverPlus);
-        System.out.println("添加商品到购物车");
-        warePage.toCart();
+        System.out.println("立即购买");
+//        warePage.toCart();
 //
 ////        //直接购买时，系统判定操作为机器人，因此先加入购物车再去结算
-//        warePage.addCart();
-//        Thread.sleep(5000);
+        warePage.addCart();
+        Thread.sleep(5000);
 
 //        driverPlus.get(cart_url);
 //        CartPage cartPage = new CartPage(driverPlus);
