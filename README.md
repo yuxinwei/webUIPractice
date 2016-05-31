@@ -106,7 +106,6 @@ web UI实战
     - AbstractBasePage，创建基础方法供子类调用，如执行js，判断元素等
     - 把数据放到文件中，用数据驱动脚本  InvokeData -- 测试用例脚本需要继承InvokeData，读数据的方法才能起作用
     - 把流程拆开，login一般用在before阶段，商品、下单和查看变成多个测试用例
-- 知识笔记 java + 自动化 链接：http://pan.baidu.com/s/1gf0i2QJ 密码：ihkz
 
 
 附录：
