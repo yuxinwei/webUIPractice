@@ -1,13 +1,12 @@
 package com.test.java.webui.project;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -35,7 +34,6 @@ public class WebDriverPlus {
         } else {
             System.setProperty("webdriver.firefox.bin", "D:\\Program Files\\Mozilla Firefox\\firefox.exe");
             driver = new FirefoxDriver();
-
         }
 
         jse = (JavascriptExecutor) driver;
@@ -68,13 +66,18 @@ public class WebDriverPlus {
         return jse;
     }
 
+    public void randomAction() {
+        Actions actions = new Actions(driver);
+        actions.sendKeys(Keys.PAGE_DOWN).build().perform();
+    }
+
     public void quit() {
         driver.quit();
     }
 
 
 
-    public WebElement findElement(By locator) {
+    /*public WebElement findElement(By locator) {
         if (isElementPresent(locator)) {
             return driver.findElement(locator);
         }
@@ -103,5 +106,5 @@ public class WebDriverPlus {
 
     public boolean isElementMatch(By locator, String text) {
         return wait.until((ExpectedConditions.textToBePresentInElementLocated(locator, text)));
-    }
+    }*/
 }

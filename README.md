@@ -108,12 +108,8 @@ web UI实战
     - 把流程拆开，login一般用在before阶段，商品、下单和查看变成多个测试用例
 
 
-
 附录：
 - 书籍文章推荐
     - [JavaScript秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
     - [PageFactory官方说明](https://github.com/SeleniumHQ/selenium/wiki/PageFactory)
     - [深入TestNG](http://www.shenyanchao.cn/blog/2013/06/05/deep-in-testng/)
-
-
-

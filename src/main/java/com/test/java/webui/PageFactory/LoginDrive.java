@@ -3,8 +3,8 @@ package com.test.java.webui.PageFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /**
@@ -15,7 +15,7 @@ public class LoginDrive extends InvokeData {
     private LoginPage loginPage;
     private WebDriver driver;
 
-    @BeforeClass
+    @BeforeMethod
     public void before() {
         System.setProperty("webdriver.firefox.bin", "D:\\Program Files\\Mozilla Firefox\\firefox.exe");
         driver = new FirefoxDriver();
@@ -32,7 +32,7 @@ public class LoginDrive extends InvokeData {
         Assert.assertTrue(loginPage.getTitle().contains("Suning"));
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDown() {
         System.out.println("after");
         driver.quit();

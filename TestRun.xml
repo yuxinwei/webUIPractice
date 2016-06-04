@@ -1,11 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-        
+
 <suite name="TestNG" verbose="2" parallel="false">
-    <test name="baidu">
+    <test name="suning">
         <classes>
-            <class name="com.test.java.webui.api.element.GetTextTest">
+            <class name="com.test.java.webui.project.AutoOrder">
                 <methods>
-                    <include name="assertGetText"/>
+                    <include name="login"/>
+                    <include name="order"/>
                 </methods>
             </class>
         </classes>

@@ -2,8 +2,11 @@ package com.test.java.webui.project.Page;
 
 import com.test.java.webui.project.WebDriverPlus;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+
+import java.awt.*;
 
 /**
  * Created by beigui on 2016/5/24.
@@ -32,7 +35,8 @@ public class WarePage extends AbstractBasePage {
         buyNum.sendKeys(num);
     }
 
-    public void addCart() {
-        moveToElement(buyButton).click();
+    public void addCart() throws AWTException {
+        Actions actions = new Actions(webDriverPlus.getDriver());
+        actions.clickAndHold(buyButton).release().build().perform();
     }
 }
